@@ -5,21 +5,21 @@
 class Jet < Formula
   desc "A CLI tool for Jira workflow management"
   homepage "https://github.com/drakeaharper/ira-jet"
-  version "1.9.0"
+  version "1.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.9.0/jet_darwin_amd64.tar.gz"
-      sha256 "9f175e2ed50a50befb79bc3e30727d8fbffdad427532f8db5fb976dcba62b49f"
+      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.10.0/jet_darwin_amd64.tar.gz"
+      sha256 "9806223bae80a0432ea7534f3f4fe5c7c29e937835072002228c1a6d2c571731"
 
       define_method(:install) do
         bin.install "jet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.9.0/jet_darwin_arm64.tar.gz"
-      sha256 "4bf48bba6b9ce1a87487058cf4318d052450e3a663f0087ba2ac49bf28ec7317"
+      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.10.0/jet_darwin_arm64.tar.gz"
+      sha256 "3e5a8ef674839ccaa7197e5ef4027387b5c7526fc4af5ed32026be2ef2b067d5"
 
       define_method(:install) do
         bin.install "jet"
@@ -29,15 +29,15 @@ class Jet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.9.0/jet_linux_amd64.tar.gz"
-      sha256 "828ed4b8454d558330af8561c2358170c644bf675c5d6149345e5105759e227b"
+      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.10.0/jet_linux_amd64.tar.gz"
+      sha256 "5e4f474eb748e6c6ccd336d23185e767840e4805fab5d7b2dcd45ecb2c31f7ed"
       define_method(:install) do
         bin.install "jet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.9.0/jet_linux_arm64.tar.gz"
-      sha256 "d5514d3b27685209d02355663df9cfbf7650720349167d195456c73447c1b3f9"
+      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.10.0/jet_linux_arm64.tar.gz"
+      sha256 "0a8cb1b5ff8618b291b421a5ceb5a4ef628d33e574d61613b273f4c1aa82a75c"
       define_method(:install) do
         bin.install "jet"
       end
