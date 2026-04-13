@@ -5,21 +5,21 @@
 class Jet < Formula
   desc "A CLI tool for Jira workflow management"
   homepage "https://github.com/drakeaharper/ira-jet"
-  version "1.8.0"
+  version "1.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.8.0/jet_darwin_amd64.tar.gz"
-      sha256 "f79711d1b67b9206399958eba87a2a279d99924c171db93a14f52501e79ef3f6"
+      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.9.0/jet_darwin_amd64.tar.gz"
+      sha256 "9f175e2ed50a50befb79bc3e30727d8fbffdad427532f8db5fb976dcba62b49f"
 
       define_method(:install) do
         bin.install "jet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.8.0/jet_darwin_arm64.tar.gz"
-      sha256 "e4f4c850a6663b0e52ba9721886674552fc7bb50567f45e1939e317179b7973d"
+      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.9.0/jet_darwin_arm64.tar.gz"
+      sha256 "4bf48bba6b9ce1a87487058cf4318d052450e3a663f0087ba2ac49bf28ec7317"
 
       define_method(:install) do
         bin.install "jet"
@@ -29,15 +29,15 @@ class Jet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.8.0/jet_linux_amd64.tar.gz"
-      sha256 "2fb1f526f043595ca18a9ff14f5dc19baf063e22b4959c8ea14105d1ae1cb32e"
+      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.9.0/jet_linux_amd64.tar.gz"
+      sha256 "828ed4b8454d558330af8561c2358170c644bf675c5d6149345e5105759e227b"
       define_method(:install) do
         bin.install "jet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.8.0/jet_linux_arm64.tar.gz"
-      sha256 "6dce75a37fc5a56c2c97e83e3003b5e80c03fa0e4473613a1545fcdea695c4b6"
+      url "https://github.com/drakeaharper/jira-jet/releases/download/v1.9.0/jet_linux_arm64.tar.gz"
+      sha256 "d5514d3b27685209d02355663df9cfbf7650720349167d195456c73447c1b3f9"
       define_method(:install) do
         bin.install "jet"
       end
