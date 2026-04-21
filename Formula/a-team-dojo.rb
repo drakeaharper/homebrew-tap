@@ -5,21 +5,21 @@
 class ATeamDojo < Formula
   desc "Terminal dojo for Canvas on-call preparedness (belt-ranked katas + SM-2 review)"
   homepage "https://github.com/drakeaharper/a-team-dojo"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/drakeaharper/a-team-dojo/releases/download/v0.1.2/a-team-dojo_darwin_amd64.tar.gz"
-      sha256 "97a541f72f4bd17351f960e3354a8c0547ea0d5ea533fc97608eb66403a41929"
+      url "https://github.com/drakeaharper/a-team-dojo/releases/download/v0.1.3/a-team-dojo_darwin_amd64.tar.gz"
+      sha256 "0d65acda9755d7e19d94f202e91a4277f0052ce37ab98b38806ec01b14c3b434"
 
       define_method(:install) do
         bin.install "a-team-dojo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/drakeaharper/a-team-dojo/releases/download/v0.1.2/a-team-dojo_darwin_arm64.tar.gz"
-      sha256 "6052550ba02a69cbf852415ae3ccbdf7f5162f16bd884d96feca69075c13bc5f"
+      url "https://github.com/drakeaharper/a-team-dojo/releases/download/v0.1.3/a-team-dojo_darwin_arm64.tar.gz"
+      sha256 "ceeb2b5f1f3d88af0cf3da3ffaf3699d6975b8a36d65288c6e3fbb9ed646536c"
 
       define_method(:install) do
         bin.install "a-team-dojo"
@@ -29,15 +29,15 @@ class ATeamDojo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drakeaharper/a-team-dojo/releases/download/v0.1.2/a-team-dojo_linux_amd64.tar.gz"
-      sha256 "1ea5c2a44811a0e5a9239d9ae3f8784d633b80d2cbac9da02e5865bda5d7c327"
+      url "https://github.com/drakeaharper/a-team-dojo/releases/download/v0.1.3/a-team-dojo_linux_amd64.tar.gz"
+      sha256 "76eb099ac5fc22923b2c278f7c7b30993381065812f4196ea231f96ce021e061"
       define_method(:install) do
         bin.install "a-team-dojo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drakeaharper/a-team-dojo/releases/download/v0.1.2/a-team-dojo_linux_arm64.tar.gz"
-      sha256 "2cfd0aa6ec6afeca3a392f18bc142808f72f4fa479b5b0801567b2d52b7a316a"
+      url "https://github.com/drakeaharper/a-team-dojo/releases/download/v0.1.3/a-team-dojo_linux_arm64.tar.gz"
+      sha256 "9478947be367bbcf21f78e560a6c0d34871cdc0901771f27c93ae8f5341f486a"
       define_method(:install) do
         bin.install "a-team-dojo"
       end
